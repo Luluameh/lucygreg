@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message us</title>
+    <link rel="stylesheet" href="massage.css">
+</head>
+
+<body>
+    <h1>Message us 🔔</h1>
+    <ul>
+        <li>
+        <a href="lulu.html"> Home 🏠</a>
+        </li>
+</ul>
+    <p>You can now message us at any time and we will be there to meet up your demains <br>
+        Do you have a work for us ?<br>
+        Do you have a questions for us ?
+        Do you want to make and enquires ?
+        comments on our work or encouragement / advice ?
+
+    </p>
+    
+
+    <form action="message">
+        <input type=" text" placeholder="Name" value=""><br>
+        <br>
+
+        <div class="write">
+            <span> write down what you want to tell us :</span><br>
+            <input type="text" box > <br>
+            <button>
+               send
+                 </button>
+                 <br>
+                 <br>                
+        </div>
+    </form>
+
+    <script>
+        function send() {
+            let name = prompt('What is your first name');
+            let email = prompt('what is your email');
+            let human = prompt( 'Are you human ?')
+            let heading = document.querySelector('h1')
+            if (human = " yes" ) {
+            heading.innerHTML = 'Hi ' + name + 'we have recieve your massage ☺ we will reply you soonest';
+            } else{
+                heading.innerHTML = '😞' +  name + " can you try again ";
+            }
+
+        }     
+            let sendButton=document.querySelector('sendButton');
+            sendButton=document.addEventListener('click', send);
+         
+        
+        /*
+        let  welcome = prompt("Hi its nice to have you");
+        let name = prompt (" what is your name ?");
+        alert ( " thank you please dont forget to leave a message for us");
+        */
+    </script>
+
+</body>
+
+</html>
